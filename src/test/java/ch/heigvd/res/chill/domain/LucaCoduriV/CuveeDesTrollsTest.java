@@ -23,6 +23,7 @@ class CuveeDesTrollsTest {
   void aBartenderShouldAcceptAnOrderForCuveeDesTrolls() {
     Bartender jane = new Bartender();
     String productName = "ch.heigvd.res.chill.domain.LucaCoduriV.CuveeDesTrolls";
+
     OrderRequest request = new OrderRequest(3, productName);
     OrderResponse response = jane.order(request);
     BigDecimal expectedTotalPrice = CuveeDesTrolls.PRICE.multiply(new BigDecimal(3));
