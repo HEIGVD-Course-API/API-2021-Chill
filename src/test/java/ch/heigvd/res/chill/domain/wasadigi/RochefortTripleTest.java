@@ -24,7 +24,7 @@ class RochefortTripleTest {
     String productName = "ch.heigvd.res.chill.domain.wasadigi.RochefortTriple";
     OrderRequest request = new OrderRequest(3, productName);
     OrderResponse response = jane.order(request);
-    BigDecimal expectedTotalPrice = RochefortTriple.PRICE.multiply(new BigDecimal(3));
+    BigDecimal expectedTotalPrice = RochefortTriple.PRICE.multiply(new BigDecimal(2));
     assertEquals(expectedTotalPrice, response.getTotalPrice());
   }
 
