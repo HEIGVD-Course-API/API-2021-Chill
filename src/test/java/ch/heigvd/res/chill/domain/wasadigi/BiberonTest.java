@@ -13,9 +13,9 @@ class BiberonTest {
 
   @Test
   void thePriceAndNameForBiberonShouldBeCorrect() {
-    Boxer beer = new Boxer();
-    assertEquals(beer.getName(), Boxer.NAME);
-    assertEquals(beer.getPrice(), Boxer.PRICE);
+    Biberon beer = new Biberon();
+    assertEquals(beer.getName(), Biberon.NAME);
+    assertEquals(beer.getPrice(), Biberon.PRICE);
   }
 
   @Test
