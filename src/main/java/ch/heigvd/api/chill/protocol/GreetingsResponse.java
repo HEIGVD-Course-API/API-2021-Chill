@@ -1,10 +1,13 @@
 package ch.heigvd.api.chill.protocol;
 
-import lombok.Data;
+//import lombok.Data;
 
-@Data
+//@Data
 public class GreetingsResponse implements IMessage {
 
   private final String text;
 
+  public GreetingsResponse(String text) {
+    this.text = text;
+  }
 }
